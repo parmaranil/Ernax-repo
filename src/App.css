@@ -1,38 +1,133 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+/* :root {
+} */
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+.main-wrapper{
+  min-width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.my-form{
+  background: #fff;
+  border-radius: 10px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.form-title{
   text-align: center;
+  margin-bottom: 30px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-title h1{
+  margin: 0px;
+  color: #0cd6a8;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.single-input{
+  width: 270px;
+  border:1px solid #c1c1c1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-bottom: 15px;
+}
+.single-input i{
+  padding: 8px 16px;
+}
+.single-input input{
+  border:0px solid #c1c1c1;
+  width: 100%;
+  outline: none;
+  height: 30px;
+  font-size: 18px;
+}
+.submit-btn{
+   border:0px solid #c1c1c1;
+   margin-top: 30px;
+  
+}
+.submit-btn input{
+   background: #0cd6a8;
+   color: #fff;
+   cursor: pointer; 
+}
+
+/*  */
+.button-position{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.theme-btn{
   color: white;
+  padding: 10px 100px;
+  border-radius: 8px;
+}
+.user{
+  position: absolute;
+  left:7%;
+  top:30%;
+}
+ul li{
+  border-top: 1px solid gray;
+}
+.upload-menu-btn .dropdown-menu{
+  border-radius: 8px;
+  background: skyblue;
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 220px;
+  margin: 0px 0px -14px 19px !important;
+  border: none ;
+}
+.dropdown-toggle::after {
+  content: none !important;
+}
+.upload-menu-btn .dropdown-menu .dropdown-item{
+  background: none;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.upload-menu-btn .dropdown-menu .dropdown-item:not(:last-child){
+  border-bottom: 1px solid gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-wrapper{
+  width: 100%;
+  height: calc(100vh - 100px);
+  overflow-y: auto;
+  overflow-x: hidden;
 }
+.footer-gallary{
+  position:sticky;
+  bottom: 0;
+  z-index: 10;
+}
+.set-img{
+  width: 100%;
+  height: 120px;
+  padding-left: 1px;
+}
+.set-img-second{
+  width: 100%;
+  height: 160px;
+  padding-left: 1px;
+  padding-top: 1px;
+}
+.cancel-btn{
+  position: absolute;
+  right: 10px;
+  top: 5px;
+
+}
+
+/*  */
