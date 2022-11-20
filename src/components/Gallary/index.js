@@ -8,7 +8,7 @@ const ImageGallary = () => {
                     <div className='row'>
                         <div className='col-12'>
                             <div className='img-wrapper'>
-                                <h3 className='mt-4 ms-3'>Files Chosen::</h3>
+                                <h3 className='mt-4 ms-3'>Files Chosen:</h3>
                                 <div class="row p-0 m-0 ">
                                     <div class="col-6 px-0 position-relative">
                                         <img
